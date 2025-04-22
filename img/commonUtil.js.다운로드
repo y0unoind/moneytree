@@ -1,0 +1,36 @@
+/**
+ * form 동적 생성
+ * @param url
+ * @param data
+ */
+
+function goView(url, data) {
+    $('#dynamicForm').remove();
+    const $form = $('<form>', {
+        id: 'dynamicForm',
+        action: url,
+        method: 'post',
+    });
+    $.each(data, function (key, value) {
+        $('<input>', {
+            type: 'hidden',
+            name: key,
+            value: value
+        }).appendTo($form);
+    });
+    $('body').append($form);
+    $form.submit();
+}
+
+/**
+ * 유효성 검증
+ * @param str
+ * @returns {boolean}
+ */
+function isEmpty(str){
+
+    if(typeof str == "undefined" || str == null || str == "" || str.trim().length == '0' || str == 'null'){
+        return true;
+    }
+    return false;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>머니트리</title>
+    <link rel="stylesheet" href="css/css.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        window.onload = function () {
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                effect: "fade",
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        };//script
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <div class="logo">
+                <img src="/img/logo.png" alt="">
+            </div> <!-- logo -->
+
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">머니트리카드</a></li>
+                    <li><a href="#">머니트리페이</a></li>
+                    <li><a href="#">머니트리(App)</a></li>
+                    <li><a href="#">제휴/광고</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </nav> <!-- gnb -->
+
+            <div class="btn_wrap">
+                <a href="#" class="btn">머니트리카드 신청</a>
+                <a href="#" class="btn_download">앱 다운로드</a>
+            </div> <!-- btn_wrap -->
+
+            <nav class="gnb-menu">
+                <ul>
+                    <li><a href="#">머니트리카드</a></li>
+                    <li><a href="#">머니트리페이</a></li>
+                    <li><a href="#">머니트리(App)</a></li>
+                    <li><a href="#">제휴/광고</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </nav> <!-- gnb -->
+        </div> <!-- header_inner -->
+    </header> <!-- header -->
+    <section class="mainvisual">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section> <!-- mainvisual -->
+</body>
+
+</html>

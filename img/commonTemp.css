@@ -1,0 +1,80 @@
+footer > .footer_inner .footer_con_wrap > .footer_con .footer_sns_link_wrap .footer_sns_link.link1 .link_icon{
+    mask-image: url(../img/footer_icon_blog.png); /* cors 에러 발생중 (서버에 올리면 해결됨) */
+    -webkit-mask-image: url(../img/footer_icon_blog.png);
+}
+
+footer > .footer_inner .footer_con_wrap > .footer_con .footer_sns_link_wrap .footer_sns_link.link2 .link_icon{
+    mask-image: url(../img/footer_icon_insta.png); /* cors 에러 발생중 (서버에 올리면 해결됨) */
+    -webkit-mask-image: url(../img/footer_icon_insta.png); /* cors 에러 발생중 (서버에 올리면 해결됨) */
+}
+footer > .footer_inner .footer_con_wrap > .footer_con .footer_sns_link_wrap .footer_sns_link.link3 .link_icon{
+    mask-image: url(../img/footer_icon_youtube.png); /* cors 에러 발생중 (서버에 올리면 해결됨) */
+    -webkit-mask-image: url(../img/footer_icon_youtube.png); /* cors 에러 발생중 (서버에 올리면 해결됨) */
+}
+footer > .footer_inner .footer_con_wrap > .footer_con .footer_sns_link_wrap .footer_sns_link.link4 .link_icon{
+    mask-image: url(../img/footer_icon_facebook.png); /* cors 에러 발생중 (서버에 올리면 해결됨) */
+    -webkit-mask-image: url(../img/footer_icon_facebook.png); /* cors 에러 발생중 (서버에 올리면 해결됨) */
+}
+
+/* scrollTop */
+.btn_scrolltop{
+    position: fixed;
+    bottom: 100px;
+    right: calc((100vw - 1256px) / 2);
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 1px solid #d7d7dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    opacity: 0;
+    transition: 0.3s;
+    transition-property: background-color, opacity;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+.btn_scrolltop.show{
+    opacity: 1;
+}
+
+.btn_scrolltop > .scrolltop_logo{
+    width: 19px;
+    height: 19px;
+    mask-image: url(../img/scrolltop_arrow.png); /* cors 에러 발생중 (서버에 올리면 해결됨) */
+    -webkit-mask-image: url(../img/scrolltop_arrow.png); /* cors 에러 발생중 (서버에 올리면 해결됨) */
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    background-color: #68686c;
+    transition: 0.3s;
+}
+
+.btn_scrolltop:hover{
+    background-color: #68686c;
+}
+.btn_scrolltop:hover > .scrolltop_logo{
+    background-color: #fff;
+}
+
+@media (max-width:1300px) {
+    .btn_scrolltop{
+        right: 15px;
+    }
+}
+@media (max-width:992px) {
+    .btn_scrolltop{
+        width: 35px;
+        height: 35px;
+        right: 15px;
+        bottom: 15px;
+    }
+    .btn_scrolltop > .scrolltop_logo{
+        width: 15px;
+        height: 15px;
+    }
+}
